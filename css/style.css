@@ -231,6 +231,7 @@ h1{
 }
 .stylist.one{
   background-image: url('https://i.pinimg.com/originals/55/99/e9/5599e99b60ffb6e71cc1a367254e6ed5.jpg');
+  background-position-y: bottom;
 }
 .stylist.two{
   background-image: url('https://media1.popsugar-assets.com/files/thumbor/El3mMweh68P3l2Wb1WwnhtEl7sY/fit-in/728xorig/filters:format_auto-!!-:strip_icc-!!-/2020/06/12/819/n/1922153/e8ca38c15ee3cc191ee752.81638433_/i/best-black-hairstylists.jpg');
