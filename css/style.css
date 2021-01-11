@@ -159,6 +159,9 @@ h1{
   float:left;
   width: 33.3%
 }
+.promise i{
+  font-size: 2rem;
+}
 .container.promises > section{
   display: flex;
   align-content: baseline;
