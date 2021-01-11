@@ -1,0 +1,409 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+  text-transform: uppercase;
+  transition: all .2s ease-in-out;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  position: absolute;
+}
+
+body *{
+  position: relative;
+}
+
+button{
+  text-transform: uppercase;
+  border: none;
+  font-size: .75rem;
+  padding: 1rem 1.5rem;
+}
+a{
+  color: white;
+  text-decoration: none;
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+header {
+
+}
+
+footer {
+
+}
+.container{
+  padding: 4% 5%;
+  width: 100%;
+}
+.spacer{
+  padding: 3rem 0;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+.container.nav{
+  position: fixed;
+  background-color: none;
+  height: 3rem;
+  padding: 0 5%;
+  z-index: 1;
+}
+ul{
+  text-align: center;
+  padding:0;
+  height: 5rem;
+
+}
+li{
+  display: inline-block;
+  padding: 0 1.5rem;
+  font-size: .75rem;
+
+}
+#menu-sandwich{
+  display: none;
+  color: white;
+}
+.black-sandwich{
+  color:black;
+}
+#nav-book{
+  float: right;
+}
+#nav-logo{
+  float: left;
+}
+p{
+  text-transform: initial;
+}
+.hero br+button{
+  margin-top:3rem;
+  background: black;
+  color: white;
+  padding: 1rem 2rem;
+}
+.container.hero{
+  padding-top: 5rem;
+  color: white;
+  padding: 3rem 15%;
+  background-image: url('https://cutewallpaper.org/21/hair-style-wallpapers/Desktop-Wallpapers-Makeup-Oleg-Gekman-Hairstyle-Hair-Face-.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right;
+
+}
+.hero #hero-book{
+  background: white;
+  margin: 0 2rem;
+  padding: 1rem 1.5rem;
+}
+.hero .box{
+  margin: 3rem 0;
+  padding: 2rem 0;
+  width: 28%;
+  background: black;
+}
+.hero .box > *{
+  padding: 0 2rem;
+  text-transform: uppercase;
+  
+}
+h1{
+  font-size: 5rem;
+  margin: 0;
+  padding: 0;
+  font-weight: 100;
+}
+.hero .box h2{
+  font-size: 1rem;
+  border-left: 2px solid white;
+}
+.hero .box p span{
+  font-size: 2rem;
+  line-height: 4rem;
+}
+.hero .box p{
+  padding-bottom: 1rem;
+}
+.container.promises{
+  padding-left: 20%;
+  padding-right: 20%;
+  text-align: center;
+
+}
+.promise{
+  float:left;
+  width: 33.3%
+}
+.container.promises > section{
+  display: flex;
+  align-content: baseline;
+  padding: 1rem 0;
+}
+.container.momentum{
+  padding: 3rem 20%;
+  width: 100%;
+  background: rgba(246, 240, 253, 0.74);
+}
+.container.momentum .box{
+  width:50%;
+  display: inline-block;
+  height: auto;
+}
+.container.momentum .box p{
+  padding-bottom: 2rem;
+}
+.container.momentum h2{
+  font-size: 2rem;
+}
+.container.momentum .box button{
+  background: black;
+  color: white;
+}
+.container.momentum img{
+  position: relative;
+  width: 100%;
+  padding-left: 2rem;
+}
+.container.stylists{
+  display: inline-block;
+
+  flex-direction: row;
+  display: flex;
+}
+.stylist{
+  float: left;
+  width: 33.3%;
+  margin-bottom: 5rem;
+  color: white;
+  height: 20rem;
+  margin: 0 1rem;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  position: relative;
+
+}
+.stylist h3{
+  margin-top: 0;
+}
+.stylist .name-tag{
+  width: 70%;
+  position: absolute;
+  background: black;
+  text-align: center;
+  margin: 2rem 0;
+  padding: .5rem;
+}
+.stylist .name-tag span{
+  font-style: italic;
+  text-transform: lowercase;
+  margin-bottom: 1rem;
+}
+.stylist.one{
+  background-image: url('https://i.pinimg.com/originals/55/99/e9/5599e99b60ffb6e71cc1a367254e6ed5.jpg');
+}
+.stylist.two{
+  background-image: url('https://media1.popsugar-assets.com/files/thumbor/El3mMweh68P3l2Wb1WwnhtEl7sY/fit-in/728xorig/filters:format_auto-!!-:strip_icc-!!-/2020/06/12/819/n/1922153/e8ca38c15ee3cc191ee752.81638433_/i/best-black-hairstylists.jpg');
+}
+.stylist.three{
+  background-image: url('https://kimwilhite.com/wp-content/uploads/sites/13951/2018/02/hairdresser-headshots-112.jpg');
+}
+.container.book{
+  background:  rgba(246, 240, 253, 0.74);
+  padding-left: 20%;
+  padding-right: 20%;
+}
+.container.examples{
+  text-align: center;
+  padding: 5rem 20%;
+}
+.container.examples .photo-grid{
+  height: 50rem;
+}
+.container.examples .photo-column{
+  float: left;
+  width: 33.3%;
+}
+.photo-grid{
+  overflow: hidden;
+}
+.photo-column{
+  overflow: hidden;
+  
+}
+.photo{
+  width: 100%;
+  object-fit: cover;
+  padding: .5rem 0;
+ 
+}
+.photo.thirty{
+  height: 15rem;
+}
+.photo.seventy{
+  height: 35rem;
+}
+.photo-column {
+  padding: .5rem;
+}
+
+.container.footer{
+  background-color: rgba(255, 255, 255, 0.74);
+  box-shadow: 1px 0 9px rgba(0,0,0,.2);
+}
+.container.footer h2{
+  text-align: center;
+}
+
+.nav-animation{
+  background-color: white;
+  box-shadow: 0 0 9px rgba(0,0,0,.2);
+}
+
+@media screen and (max-width: 960px){
+  .container.momentum{
+    padding: 3rem 10%;
+    display: flex;
+
+  }
+  .container.momentum .box{
+    height: auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    justify-content: center
+  }
+  .container.momentum img{
+    padding-left: 0;
+  }
+}
+
+@media screen and (max-width: 860px){
+
+  .hero br+button{
+    padding: 1rem 2rem;
+    margin: 3rem auto;
+  }
+
+  .hero .box{
+    width: 100%;
+  }
+
+  .container.hero {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .container.momentum{
+    padding: 3rem 10%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+  }
+  .container.momentum .box{
+    width: 100%;
+    height: auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    justify-content: center
+  }
+  
+  .container.momentum img {
+    position: relative;
+    width: 100%;
+    padding-left: 0rem;
+    margin-top: 2rem;
+  }
+
+  .container.stylists{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .stylist{
+    width: 100%;
+    margin: 2rem 0;
+  }
+
+  .stylist .name-tag{
+    width: 30%;
+  }
+
+  ul{
+    display: flex;
+    justify-content: center;
+  }
+
+  li{
+    display: none;
+  }
+  #menu-sandwich{
+    display: inline-block;
+    position: absolute;
+    right: 0vw;
+  }
+  #nav-logo{
+    display: block;
+  }
+
+  .container.examples{
+    padding: 0;
+  }
+  .container.examples .photo-grid{
+    height: auto;
+  }
+  .container.examples .photo-column {
+    width: 100%;
+    padding: 0 2rem;
+  }
+
+  .container.promises{
+    padding: 1rem 1rem;
+
+  }
+
+  .promise{
+    display: flex;
+    flex-direction: column;
+  }
+  .promise *{
+    text-align: center;
+  }
+
+  h1{
+    font-size: xxx-large;
+  }
+}
