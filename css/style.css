@@ -367,13 +367,19 @@ h1{
     width: 30%;
   }
 
+  .container.nav{
+    height: auto;
+  }
+  
   ul{
     display: flex;
     justify-content: center;
+    height: auto;
   }
 
   li{
     display: none;
+    font-size: 2.5rem;
   }
   #menu-sandwich{
     display: inline-block;
